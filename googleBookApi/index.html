@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Search</title>
+    <!-- FONT  -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,100&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="input-group" id="input">
+                <div class="col-md-6" id="search-input">
+                    <input class="form-control " id="search-box" type="text" placeholder="Book searching...">
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center moveSearchBtn">
+                    <button id="search" class="btn" onclick="">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header  -->
+
+    <!-- Section menubar-->
+
+    <div class="container-fluid menuBar">
+
+        <!-- dropdown menu choose language -->
+        <div class="row p-2 p-md-2 pl-md-2" id="menuBorder">
+
+            <!-- COL 1 dropdown -->
+            <div class="col-md-3 px-0 d-flex justify-content-center align-items-center">
+                <div class="dropdown" id="dropdownLang">
+                    <button class="btn dropdown-toggle" type="button" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language:
+                </button>
+                    <div class="dropdown-menu" aria-labelledby="lang">
+                        <button class="dropdown-item" type="button">EN</button>
+                        <button class="dropdown-item" type="button">Other</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COL2 checkbox  -->
+            <div class="col-md-3 px-0 d-flex align-items-center justify-content-center" id="checkbox-group">
+
+                <form class="d-flex justify-content-center">
+
+                    <div class="custom-control custom-checkbox pr-5 mr-5">
+                        <input type="checkbox" class="custom-control-input" id="fiction" name="fiction" value="fiction">
+                        <label class="custom-control-label" for="fiction">Fiction</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox px-5 mx-5">
+                        <input type="checkbox" class="custom-control-input" id="novel" name="novel">
+                        <label class="custom-control-label" for="novel">Novel</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox pl-5 ml-5">
+                        <input type="checkbox" class="custom-control-input" id="thriller" name="thriller">
+                        <label class="custom-control-label" for="thriller">Thriller</label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- COL 3 page selector-->
+            <div class="col-md-3 px-0 align-items-center d-flex justify-content-center" id="movePageDropdown">
+                <div class="input-group " id="widthDropdown">
+                    <select class="custom-select" id="sort">
+                    <option selected disabled hidden>Pages:</option>
+                    <option value="1" >100-200</option>
+                    <option value="2" >300-400</option>
+                    <option value="3" >random</option>
+                    
+                </select>
+                </div>
+            </div>
+
+            <!-- COL 4 slider  -->
+            <div class="col-md-3 p-0 d-flex justify-content-center" id="moveSlidebar">
+                <div class="slidecontainer">
+                    <p class="m-0 text-center">Zoom in or out:</p>
+                    <!-- <p>50%</p> -->
+                    <input type="range" min="50" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- BOOK CARD   -->
+    <div class="container-fluid " id="cardBookContainer">
+        <div class="row pt-md-2 d-flex justify-content-center align-items-center">
+
+            <div class="book-list">
+                <h2 class="text-center mt-md-3">Search Results</h2>
+                <div id="list-output" class="">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer>
+        <p class="text-center p-md-3 m-md-0">All rights reserved.</p>
+    </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- js  -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
