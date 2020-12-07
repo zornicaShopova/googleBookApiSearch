@@ -1,5 +1,12 @@
 This is a web page for searching books through google api
+To use the search : 
+Just write some book title like: Harry Potter 
+----------------------------------------------
 Have to be added a few options:
 1.to be responsive
 2.functionality on the buttons in the menu bar
+  *language dropdown  - selecting books by language
+  *checkboxes - selecting between three genre of books
+  *pages dropdown - selecting pages count 
+  *slider - resizing the books card-body  
 3.design changes
